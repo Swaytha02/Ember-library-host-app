@@ -82,5 +82,11 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/admin-dashboard",
+      "lib/student-dashboard"
+    ]
   }
 }
