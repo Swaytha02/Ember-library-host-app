@@ -5,7 +5,11 @@
     "ember-engine"
   ],
   "dependencies": {
+    "ember-auto-import": "^2.10.0",
+    "ember-cli-babel": "*",
     "ember-cli-htmlbars": "*",
-    "ember-cli-babel": "*"
+    "ember-click-outside": "^6.1.1",
+    "ember-truth-helpers": "^4.0.3",
+    "shared-ui": "*"
   }
 }

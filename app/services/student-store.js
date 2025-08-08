@@ -45,4 +45,9 @@ export default class StudentStoreService extends Service {
         );
         this.saveStudents();
     }
+
+    updateBooks(newBooks) {
+        this.books = newBooks;
+        localStorage.setItem('books', JSON.stringify(newBooks));
+    }
 }

@@ -27,8 +27,6 @@ export default class LoginPage extends Component {
     @action
     async handleLogin(event) {
         event.preventDefault();
-        
-        // const users = this.store.peekAll('user');
 
         const user = users.find(
             (u) => u.username === this.username && u.password === this.password
@@ -41,9 +39,9 @@ export default class LoginPage extends Component {
             this.password = '';
 
             if(user.role === 'admin'){
-                this.router.transitionTo('admin/dashboard');
+                this.router.transitionTo('admin.dashboard');
             } else if(user.role === 'student') {
-                this.router.transitionTo('student/dashboard');
+                this.router.transitionTo('student.dashboard');
             } else {
                 this.errorMessage = 'Unknown role';
             }

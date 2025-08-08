@@ -60,3 +60,9 @@
 .request-box button {
   margin-right: 1rem;
 }
+
+.edit-student {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}

@@ -10,9 +10,9 @@ export default class IndexRoute extends Route {
 
         if (user) {
         if (user.role === 'admin') {
-            this.router.replaceWith('admin'); 
+            this.router.replaceWith('admin.dashboard'); 
         } else if (user.role === 'student') {
-            this.router.replaceWith('student'); 
+            this.router.replaceWith('student.dashboard'); 
         } else {
             this.router.replaceWith('login-page');
         }
